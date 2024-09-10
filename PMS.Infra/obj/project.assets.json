@@ -4988,19 +4988,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\": {}
+    "C:\\Users\\PavaniMaddu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
       "projectName": "PMS.Infra",
-      "projectPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
-      "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\",
+      "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+      "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5015,8 +5015,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
-              "projectPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
+            "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
+              "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
             }
           }
         }
@@ -5077,8 +5077,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

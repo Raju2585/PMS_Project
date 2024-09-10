@@ -1087,19 +1087,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\": {}
+    "C:\\Users\\PavaniMaddu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
       "projectName": "PMS.Domain",
-      "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
-      "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
+      "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+      "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1152,8 +1152,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
