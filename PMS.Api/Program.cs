@@ -25,6 +25,8 @@ builder.Services.AddScoped<IDeviceService,DeviceService>();
 builder.Services.AddScoped<IDeviceRepository,DeviceRepository>();
 builder.Services.AddScoped<IVitalSignService,VitalSignService>();
 builder.Services.AddScoped<IVitalSignRepository,VitalSignRepository>();
+builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
 
 var app = builder.Build();
