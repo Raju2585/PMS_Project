@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PMS.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2009e4a91e6b6b6fd8f8c76af321abb2d0765791")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94a0a64b11eb7f16bd46fd09786ff19fbf6de380")]
 [assembly: System.Reflection.AssemblyProductAttribute("PMS.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PMS.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
