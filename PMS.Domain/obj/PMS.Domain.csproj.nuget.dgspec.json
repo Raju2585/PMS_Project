@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {}
   },
   "projects": {
@@ -12,9 +13,30 @@
         "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
         "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
+=======
+    "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "projectName": "PMS.Domain",
+        "projectPath": "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\SuchithraJalda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< Updated upstream
           "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\SuchithraJalda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
