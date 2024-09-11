@@ -9,6 +9,7 @@ namespace PMS.Application.Repository_Interfaces
         Task<Appointment> UpdateAppointment(int appointmentId, Appointment appointment);
         Task<List<Appointment>> GetAppointmentsByPatientId(int patientId);
         Task<List<Appointment>> GetAppointmentsByDoctorId(int doctorId);
+        Task<Appointment> UpdateAppointmentStatus(Appointment appointment);
 
     }
 }

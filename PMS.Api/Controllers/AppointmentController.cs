@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PMS.Application.Interfaces;
 using PMS.Domain.Entities;
+using PMS.Domain.Entities.DTOs;
 
 namespace PMS.Api.Controllers
 {
@@ -41,7 +42,7 @@ namespace PMS.Api.Controllers
 
         [HttpPut]
         [Route("Modify/{id:int}")]
-        public async Task<IActionResult> ModifyAppointment(int id, [FromBody] Appointment appointment)
+        public async Task<IActionResult> ModifyAppointment(int id, [FromBody] RequestAppointmentDto appointment)
         {
             if (id != appointment.AppointmentId)
             {
@@ -72,6 +73,57 @@ namespace PMS.Api.Controllers
             var appointment = await _appointmentService.GetAppointmentsByDoctorId(doctorId);
             return Ok(appointment);
         }
+
+        [HttpPut]
+        [Route("update-status/{appointmentId:int}")]
+        public async Task<IActionResult> UpdateStatus(int appointmentId, [FromQuery] int status)
+        {
+            
+            if (status != 0 && status != 1)
+            {
+                return BadRequest("Invalid statusId. Must be 0 (cancelled) or 1 (booked).");
+            }
+
+            try
+            {
+                var appointment = new Appointment
+                {
+                    AppointmentId = appointmentId,
+                    StatusId = status
+                };
+
+                
+                var updatedAppointment = await _appointmentService.UpdateAppointmentStatus(appointment);
+
+                
+                if (updatedAppointment == null)
+                {
+                    return NotFound("Appointment not found.");
+                }
+
+                
+                return Ok(updatedAppointment);
+            }
+            catch (ArgumentException ex)
+            {
+                
+                return BadRequest(ex.Message);
+            }
+            catch (KeyNotFoundException)
+            {
+                
+                return NotFound("Appointment not found.");
+            }
+            catch (Exception ex)
+            {
+                
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
     }
 }
+
+
 

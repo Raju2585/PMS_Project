@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using PMS.Domain.Entities;
+using PMS.Domain.Entities.DTOs;
 using PMS.Domain.Entities.Request;
 using PMS.Domain.Entities.Response;
 namespace PMS.Domain
@@ -17,6 +18,11 @@ namespace PMS.Domain
             CreateMap<PatientReq, Patient>();
             CreateMap<Patient, PatientDtl>();
             CreateMap<PatientDtl, Patient>();
+
+            CreateMap<Appointment,AppointmentDto>();
+            CreateMap<AppointmentDto,Appointment>();
+            CreateMap<Appointment,RequestAppointmentDto>();
+            CreateMap<RequestAppointmentDto, Appointment>();
         }
     }
 }

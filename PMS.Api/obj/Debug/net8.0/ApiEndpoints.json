@@ -30,7 +30,7 @@
       },
       {
         "Name": "appointment",
-        "Type": "PMS.Domain.Entities.Appointment",
+        "Type": "PMS.Domain.Entities.DTOs.RequestAppointmentDto",
         "IsRequired": true
       }
     ],
@@ -85,6 +85,27 @@
         "Name": "appointmentDto",
         "Type": "PMS.Domain.Entities.AppointmentDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PMS.Api.Controllers.AppointmentController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/Appointment/update-status/{appointmentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
