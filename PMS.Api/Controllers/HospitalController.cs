@@ -25,7 +25,7 @@ namespace PMS.Api.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500);
+                return StatusCode(500, "Error in filteringHospitals: " + ex.Message);
             }
 
         }
