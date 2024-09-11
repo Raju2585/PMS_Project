@@ -7,6 +7,7 @@ using AutoMapper;
 using PMS.Domain.Entities;
 using PMS.Domain.Entities.Request;
 using PMS.Domain.Entities.Response;
+using PMS.Domain.NewFolder;
 namespace PMS.Domain
 {
     public class MappingProfile:Profile
@@ -17,6 +18,8 @@ namespace PMS.Domain
             CreateMap<PatientReq, Patient>();
             CreateMap<Patient, PatientDtl>();
             CreateMap<PatientDtl, Patient>();
+            CreateMap<Doctor,DoctorDTO>().ReverseMap();  
+            
         }
     }
 }
