@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {}
+    "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+    "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
         "projectName": "PMS.Domain",
-        "projectPath": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
-        "packagesPath": "C:\\Users\\ShruthiBurka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ShruthiBurka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +45,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

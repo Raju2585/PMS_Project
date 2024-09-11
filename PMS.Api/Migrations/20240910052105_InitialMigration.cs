@@ -19,7 +19,8 @@ namespace PMS.Api.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     HospitalName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     City = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Pincode = table.Column<int>(type: "int", nullable: false)
+                    Pincode = table.Column<int>(type: "int", nullable: false),
+                    HospitalImage = table.Column<byte[]>(type: "varbinary(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -36,6 +37,7 @@ namespace PMS.Api.Migrations
                     PatientEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ContactNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DeviceName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -73,6 +75,7 @@ namespace PMS.Api.Migrations
                     ConsultationFee = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     HospitalId = table.Column<int>(type: "int", nullable: false),
+                    Image = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     AppointmentId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -190,23 +193,30 @@ namespace PMS.Api.Migrations
                 name: "VitalSigns",
                 columns: table => new
                 {
-                    VitalSignId = table.Column<int>(type: "int", nullable: false),
+                    VitalSignId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     DeviceId = table.Column<int>(type: "int", nullable: false),
                     HeartRate = table.Column<int>(type: "int", nullable: false),
                     OxygenSaturation = table.Column<int>(type: "int", nullable: false),
                     BloodPressure = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Temperature = table.Column<float>(type: "real", nullable: false),
-                    RespiratoryRate = table.Column<int>(type: "int", nullable: false)
+                    RespiratoryRate = table.Column<int>(type: "int", nullable: false),
+                    DeviceId1 = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_VitalSigns", x => x.VitalSignId);
                     table.ForeignKey(
-                        name: "FK_VitalSigns_Devices_VitalSignId",
-                        column: x => x.VitalSignId,
+                        name: "FK_VitalSigns_Devices_DeviceId",
+                        column: x => x.DeviceId,
                         principalTable: "Devices",
                         principalColumn: "DeviceId",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_VitalSigns_Devices_DeviceId1",
+                        column: x => x.DeviceId1,
+                        principalTable: "Devices",
+                        principalColumn: "DeviceId");
                 });
 
             migrationBuilder.CreateIndex(
@@ -244,6 +254,19 @@ namespace PMS.Api.Migrations
                 name: "IX_MedicalHistories_PatientId",
                 table: "MedicalHistories",
                 column: "PatientId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_VitalSigns_DeviceId",
+                table: "VitalSigns",
+                column: "DeviceId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_VitalSigns_DeviceId1",
+                table: "VitalSigns",
+                column: "DeviceId1",
+                unique: true,
+                filter: "[DeviceId1] IS NOT NULL");
         }
 
         /// <inheritdoc />

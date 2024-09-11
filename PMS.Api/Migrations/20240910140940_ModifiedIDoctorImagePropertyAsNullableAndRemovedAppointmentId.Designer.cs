@@ -12,8 +12,8 @@ using PMS.Infra;
 namespace PMS.Api.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240908145425_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20240910140940_ModifiedIDoctorImagePropertyAsNullableAndRemovedAppointmentId")]
+    partial class ModifiedIDoctorImagePropertyAsNullableAndRemovedAppointmentId
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -123,9 +123,6 @@ namespace PMS.Api.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DoctorId"));
 
-                    b.Property<int>("AppointmentId")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("ConsultationFee")
                         .HasColumnType("decimal(18,2)");
 
@@ -143,6 +140,9 @@ namespace PMS.Api.Migrations
 
                     b.Property<int>("HospitalId")
                         .HasColumnType("int");
+
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<bool>("IsAvailable")
                         .HasColumnType("bit");
@@ -169,6 +169,10 @@ namespace PMS.Api.Migrations
                     b.Property<string>("City")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("HospitalImage")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<string>("HospitalName")
                         .IsRequired()
@@ -228,6 +232,10 @@ namespace PMS.Api.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("DeviceName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Gender")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -277,13 +285,19 @@ namespace PMS.Api.Migrations
             modelBuilder.Entity("PMS.Domain.Entities.VitalSign", b =>
                 {
                     b.Property<int>("VitalSignId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VitalSignId"));
 
                     b.Property<string>("BloodPressure")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("DeviceId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DeviceId1")
                         .HasColumnType("int");
 
                     b.Property<int>("HeartRate")
@@ -299,6 +313,13 @@ namespace PMS.Api.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("VitalSignId");
+
+                    b.HasIndex("DeviceId")
+                        .IsUnique();
+
+                    b.HasIndex("DeviceId1")
+                        .IsUnique()
+                        .HasFilter("[DeviceId1] IS NOT NULL");
 
                     b.ToTable("VitalSigns");
                 });
@@ -377,10 +398,14 @@ namespace PMS.Api.Migrations
             modelBuilder.Entity("PMS.Domain.Entities.VitalSign", b =>
                 {
                     b.HasOne("PMS.Domain.Entities.Device", "Device")
-                        .WithOne("VitalSign")
-                        .HasForeignKey("PMS.Domain.Entities.VitalSign", "VitalSignId")
+                        .WithOne()
+                        .HasForeignKey("PMS.Domain.Entities.VitalSign", "DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("PMS.Domain.Entities.Device", null)
+                        .WithOne("VitalSign")
+                        .HasForeignKey("PMS.Domain.Entities.VitalSign", "DeviceId1");
 
                     b.Navigation("Device");
                 });

@@ -1,4 +1,5 @@
-﻿using PMS.Application.Repository_Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using PMS.Application.Repository_Interfaces;
 using PMS.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -15,24 +16,35 @@ namespace PMS.Infra
         {
             _applicationDbContext = applicationDbContext;
         }
-
-        public List<Patient> Patients = new List<Patient>
-        {
-            new Patient() {
-                PatientId = 1,
-                PatientName = "John Doe",
-                PatientEmail = "john.doe@example.com",
-                ContactNumber = "+1234567890",
-                Password = "password123",
-                Age = 30,
-                Gender = "Male",
-                Date = DateTime.Now
-            }
-        };
         
         public async Task<List<Patient>> GetAllPatients()
         {
-            return _applicationDbContext.Patients.ToList();
+            return await _applicationDbContext.Patients.ToListAsync();
+        }
+        public async Task<Patient> GetPatientByEmail(string email)
+        {
+            var patient = _applicationDbContext.Patients.FirstOrDefault(p => p.PatientEmail == email);
+            return patient;
+        }
+        public async Task<bool> CheckIfPatientExisted(Patient patient)
+        {
+            var isExisted = _applicationDbContext.Patients.FirstOrDefault(p => p.PatientEmail == patient.PatientEmail);
+            if (isExisted == null)
+            {
+                return false;
+            }
+            return true;
+        }
+        public async Task<bool> RegisterPatient(Patient patient)
+        {
+            var isExisted = await CheckIfPatientExisted(patient);
+            if (!isExisted)
+            {
+                await _applicationDbContext.Patients.AddAsync(patient);
+                await _applicationDbContext.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
     }
 }

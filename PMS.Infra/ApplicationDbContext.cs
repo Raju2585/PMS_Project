@@ -34,10 +34,10 @@ namespace PMS.Infra
 
             // Configure one-to-one relationship between Device and VitalSign
             modelBuilder.Entity<VitalSign>()
-                .HasOne(v => v.Device)
-                .WithOne(d => d.VitalSign)
-                .HasForeignKey<VitalSign>(v=>v.VitalSignId)
-                .OnDelete(DeleteBehavior.Cascade);
+           .HasOne(v => v.Device)  
+           .WithOne()  
+           .HasForeignKey<VitalSign>(v => v.DeviceId)  
+           .OnDelete(DeleteBehavior.Cascade);
 
             // Configure one-to-many relationship between Doctor and Hospital
             modelBuilder.Entity<Doctor>()
@@ -78,6 +78,10 @@ namespace PMS.Infra
                 .OnDelete(DeleteBehavior.Restrict);
 
 
+        }
+        public async Task<int> SaveChangesAsync()
+        {
+            return await base.SaveChangesAsync();
         }
     }
 }

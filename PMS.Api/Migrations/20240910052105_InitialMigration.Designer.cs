@@ -12,8 +12,8 @@ using PMS.Infra;
 namespace PMS.Api.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240909075220_AddedImagePropertyInHospitalAndDoctor")]
-    partial class AddedImagePropertyInHospitalAndDoctor
+    [Migration("20240910052105_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -289,13 +289,19 @@ namespace PMS.Api.Migrations
             modelBuilder.Entity("PMS.Domain.Entities.VitalSign", b =>
                 {
                     b.Property<int>("VitalSignId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VitalSignId"));
 
                     b.Property<string>("BloodPressure")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("DeviceId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DeviceId1")
                         .HasColumnType("int");
 
                     b.Property<int>("HeartRate")
@@ -311,6 +317,13 @@ namespace PMS.Api.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("VitalSignId");
+
+                    b.HasIndex("DeviceId")
+                        .IsUnique();
+
+                    b.HasIndex("DeviceId1")
+                        .IsUnique()
+                        .HasFilter("[DeviceId1] IS NOT NULL");
 
                     b.ToTable("VitalSigns");
                 });
@@ -389,10 +402,14 @@ namespace PMS.Api.Migrations
             modelBuilder.Entity("PMS.Domain.Entities.VitalSign", b =>
                 {
                     b.HasOne("PMS.Domain.Entities.Device", "Device")
-                        .WithOne("VitalSign")
-                        .HasForeignKey("PMS.Domain.Entities.VitalSign", "VitalSignId")
+                        .WithOne()
+                        .HasForeignKey("PMS.Domain.Entities.VitalSign", "DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("PMS.Domain.Entities.Device", null)
+                        .WithOne("VitalSign")
+                        .HasForeignKey("PMS.Domain.Entities.VitalSign", "DeviceId1");
 
                     b.Navigation("Device");
                 });
