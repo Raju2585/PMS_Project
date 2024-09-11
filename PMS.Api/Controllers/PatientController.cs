@@ -34,8 +34,8 @@ namespace PMS.Api.Controllers
             return Ok(patients);
         }
         [HttpPost]
-        [Route("RegisterPatient")]
-        public async Task<ActionResult<PatientRes>> RegisterPatient(PatientReq patientReq)
+        [Route("Register")]
+        public async Task<ActionResult<PatientRes>> Register(PatientReq patientReq)
         {
             var PatientRes = await _patientService.RegisterPatient(patientReq);
             if (PatientRes.IsSuccess)
