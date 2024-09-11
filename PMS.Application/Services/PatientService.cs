@@ -33,8 +33,16 @@ namespace PMS.Application.Services
 
         public async Task<List<PatientDtl>> GetAllPatientDtls()
         {
-            var PatientList=await _repository.GetAllPatients();
-            var PatientResList = _mapper.Map<List<PatientDtl>>(PatientList);
+            List<PatientDtl> PatientResList = null;
+            try
+            {
+                var PatientList = await _repository.GetAllPatients();
+                PatientResList = _mapper.Map<List<PatientDtl>>(PatientList);
+            }
+            catch (Exception ex)
+            {
+                return PatientResList;
+            }
             return PatientResList;
         }
 
@@ -44,29 +52,43 @@ namespace PMS.Application.Services
             {
                 return new PatientRes { IsSuccess=false,ErrorMessage="Required a patient"};
             }
-            var newPatient = _mapper.Map<Patient>(patientReq);
-            newPatient.PatientName = patientReq.FirstName + " " + patientReq.LastName;
-            newPatient.Date=DateTime.Now;
-            var isPatientAdded=await _repository.RegisterPatient(newPatient);
-            if(isPatientAdded)
+            try
             {
-                return new PatientRes { IsSuccess = true, PatientEmail = newPatient.PatientEmail };
+                var newPatient = _mapper.Map<Patient>(patientReq);
+                newPatient.PatientName = patientReq.FirstName + " " + patientReq.LastName;
+                newPatient.Date = DateTime.Now;
+                var isPatientAdded = await _repository.RegisterPatient(newPatient);
+                if (isPatientAdded)
+                {
+                    return new PatientRes { IsSuccess = true, PatientEmail = newPatient.PatientEmail };
+                }
+            }
+            catch (Exception ex)
+            {
+                return new PatientRes { IsSuccess = false, ErrorMessage = "Patient not added" };
             }
             return new PatientRes { IsSuccess = false, ErrorMessage = "Patient not added" };
-
         }
         private async Task<PatientLogin> AuthenticatePatient(PatientLogin patient)
         {
             PatientLogin _patient = null;
-            
-            var patientOb = await _repository.GetPatientByEmail(patient.Email);
 
-            if (patientOb != null && (patient.Email == patientOb.PatientEmail && patient.Password == patientOb.Password))
+            try
             {
-                _patient = patient;
+                var patientOb = await _repository.GetPatientByEmail(patient.Email);
+
+                if (patientOb != null && (patient.Email == patientOb.PatientEmail && patient.Password == patientOb.Password))
+                {
+                    _patient = patient;
+                }
+            }
+            catch (Exception ex)
+            {
+                return _patient;
             }
 
             return _patient;
+
         }
         private async Task<string> GenerateToken(PatientLogin patient)
         {
@@ -82,10 +104,17 @@ namespace PMS.Application.Services
         public async Task<string> Login(PatientLogin patient)
         {
             var token = "";
-            var _user =await AuthenticatePatient(patient);
-            if (_user != null)
+            try
             {
-                token = await GenerateToken(patient);
+                var _user = await AuthenticatePatient(patient);
+                if (_user != null)
+                {
+                    token = await GenerateToken(patient);
+                }
+            }
+            catch (Exception e)
+            {
+                return token;
             }
             return token;
         }

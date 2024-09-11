@@ -4941,11 +4941,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
       "projectName": "PMS.Infra",
-      "projectPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+      "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
       "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Infra\\obj\\",
+      "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4963,8 +4963,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
-              "projectPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
+            "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
+              "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
             }
           }
         }
@@ -5025,7 +5025,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

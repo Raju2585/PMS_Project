@@ -1011,7 +1011,10 @@
           "System.Linq": "4.3.0"
         },
         "runtime": {
-          "PMS.Application.dll": {}
+          "PMS.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PMS.Domain/1.0.0": {
@@ -1020,7 +1023,10 @@
           "System.Linq": "4.3.0"
         },
         "runtime": {
-          "PMS.Domain.dll": {}
+          "PMS.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PMS.Infra/1.0.0": {
@@ -1031,7 +1037,10 @@
           "System.Linq": "4.3.0"
         },
         "runtime": {
-          "PMS.Infra.dll": {}
+          "PMS.Infra.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
