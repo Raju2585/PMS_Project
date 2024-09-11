@@ -4932,44 +4932,29 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "PMS.Application >= 1.0.0",
+      "PMS.Domain >= 1.0.0",
       "System.Linq >= 4.3.0"
     ]
   },
   "packageFolders": {
-<<<<<<< Updated upstream
-    "C:\\Users\\PavaniMaddu\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\SuchithraJalda\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
       "projectName": "PMS.Infra",
-      "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
-      "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
-      "projectName": "PMS.Infra",
-      "projectPath": "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+      "projectPath": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
       "packagesPath": "C:\\Users\\SuchithraJalda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\",
->>>>>>> Stashed changes
+      "outputPath": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< Updated upstream
-        "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
         "C:\\Users\\SuchithraJalda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4984,13 +4969,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< Updated upstream
-            "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
-              "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
-=======
-            "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
-              "projectPath": "C:\\Users\\SuchithraJalda\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
->>>>>>> Stashed changes
+            "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
+              "projectPath": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
+            },
+            "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+              "projectPath": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
             }
           }
         }
