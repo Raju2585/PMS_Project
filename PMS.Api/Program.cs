@@ -29,6 +29,8 @@ builder.Services.AddScoped<IDeviceService,DeviceService>();
 builder.Services.AddScoped<IDeviceRepository,DeviceRepository>();
 builder.Services.AddScoped<IVitalSignService,VitalSignService>();
 builder.Services.AddScoped<IVitalSignRepository,VitalSignRepository>();
+builder.Services.AddScoped<IHospitalRepository,HospitalRepository>();
+builder.Services.AddScoped<IHospitalService,HospitalService>(); 
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
