@@ -161,7 +161,7 @@
     "Parameters": [
       {
         "Name": "patient",
-        "Type": "PMS.Domain.Entities.Request.PatientLogin",
+        "Type": "PMS.Domain.Entities.Request.LoginReq",
         "IsRequired": true
       }
     ],
