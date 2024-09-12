@@ -30,15 +30,14 @@ builder.Services.AddScoped<IDeviceService,DeviceService>();
 builder.Services.AddScoped<IDeviceRepository,DeviceRepository>();
 builder.Services.AddScoped<IVitalSignService,VitalSignService>();
 builder.Services.AddScoped<IVitalSignRepository,VitalSignRepository>();
-<<<<<<< HEAD
+
 builder.Services.AddScoped<IMedicalhistoryService,MedicalHistoryService>();
 builder.Services.AddScoped<IMedicalHistoryRepository,MedicalHistoryRepository>();
-=======
+
 builder.Services.AddScoped<IHospitalRepository,HospitalRepository>();
 builder.Services.AddScoped<IHospitalService,HospitalService>(); 
 builder.Services.AddScoped<IDoctorRepository,DoctorRepository>();   
 builder.Services.AddScoped<IDoctorService,DoctorService>();
->>>>>>> HospitalService
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
