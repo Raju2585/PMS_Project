@@ -1503,24 +1503,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SuchithraJalda\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
+      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
       "projectName": "PMS.Application",
-      "projectPath": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
-      "packagesPath": "C:\\Users\\SuchithraJalda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Application\\obj\\",
+      "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
+      "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\SuchithraJalda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1535,8 +1530,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
-              "projectPath": "C:\\Users\\SuchithraJalda\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
+            "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+              "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
             }
           }
         }
