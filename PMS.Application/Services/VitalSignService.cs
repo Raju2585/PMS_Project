@@ -1,6 +1,7 @@
 ﻿using PMS.Application.Interfaces;
 using PMS.Application.Repository_Interfaces;
 using PMS.Domain.Entities;
+using PMS.Domain.Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,14 @@ namespace PMS.Application.Services
             };
             return await _vitalSignRepository.CreateVitalSign(vitalSign);
 
+        }
+
+        public async Task<VitalSign> GetVitalSignByPatient(int patientid)
+        {
+            
+            var vitalsigns=await _vitalSignRepository.GetVitalSignByPatient(patientid);
+            return vitalsigns;
+            
         }
     }
 }

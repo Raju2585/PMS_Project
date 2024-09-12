@@ -30,6 +30,15 @@ builder.Services.AddScoped<IDeviceService,DeviceService>();
 builder.Services.AddScoped<IDeviceRepository,DeviceRepository>();
 builder.Services.AddScoped<IVitalSignService,VitalSignService>();
 builder.Services.AddScoped<IVitalSignRepository,VitalSignRepository>();
+<<<<<<< HEAD
+builder.Services.AddScoped<IMedicalhistoryService,MedicalHistoryService>();
+builder.Services.AddScoped<IMedicalHistoryRepository,MedicalHistoryRepository>();
+=======
+builder.Services.AddScoped<IHospitalRepository,HospitalRepository>();
+builder.Services.AddScoped<IHospitalService,HospitalService>(); 
+builder.Services.AddScoped<IDoctorRepository,DoctorRepository>();   
+builder.Services.AddScoped<IDoctorService,DoctorService>();
+>>>>>>> HospitalService
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -44,7 +53,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
-
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder.WithOrigins("http://localhost:3000") // Allow React app origin
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -53,7 +69,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+// Use CORS policy
+app.UseCors("AllowSpecificOrigin");
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
