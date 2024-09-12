@@ -22,7 +22,8 @@ builder.Services.AddDbContext<IApplicationDbContext,ApplicationDbContext>(option
 options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationDb"),
 b=>b.MigrationsAssembly("PMS.Api")
 ));
-
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
+builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<IPatientService,PatientService>();
 builder.Services.AddScoped<IPatientRepository,PatientRepository>();
 builder.Services.AddScoped<IDeviceService,DeviceService>();
