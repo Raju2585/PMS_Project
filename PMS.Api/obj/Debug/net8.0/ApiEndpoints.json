@@ -127,8 +127,8 @@
   },
   {
     "ContainingType": "PMS.Api.Controllers.PatientController",
-    "Method": "RegisterPatient",
-    "RelativePath": "api/Patient/RegisterPatient",
+    "Method": "Register",
+    "RelativePath": "api/Patient/Register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
