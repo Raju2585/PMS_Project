@@ -120,7 +120,28 @@ namespace PMS.Api.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+        [HttpGet("hospital/{hospitalName}")]
+        public async Task<IActionResult> RetrieveAppointmentsByHospital(string hospitalName)
+        {
+            if (string.IsNullOrWhiteSpace(hospitalName))
+            {
+                return BadRequest("Hospital name cannot be null or empty");
+            }
 
+            try
+            {
+                var appointments = await _appointmentService.GetAppointmentsByHospital(hospitalName);
+                if (appointments == null || appointments.Count == 0)
+                {
+                    return NotFound("No appointments found for the specified hospital");
+                }
+                return Ok(appointments);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
 
     }
 }

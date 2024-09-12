@@ -71,5 +71,16 @@ namespace PMS.Infra
             return existingAppointment;
         }
 
+        public async Task<List<Appointment>> GetAppointmentsByHospital(string hospitalName)
+        {
+            if (string.IsNullOrWhiteSpace(hospitalName))
+                throw new ArgumentException("Hospital name cannot be null or empty", nameof(hospitalName));
+
+            return await _applicationContext.Appointments
+                .Where(a => a.HospitalName == hospitalName)
+                
+                .ToListAsync();
+        }
+
     }
 }

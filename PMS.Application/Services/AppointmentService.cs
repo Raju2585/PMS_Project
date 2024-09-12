@@ -120,5 +120,10 @@ namespace PMS.Application.Services
 
             return await _appointmentRepository.UpdateAppointmentStatus(existingAppointment);
         }
+
+        public Task<List<Appointment>> GetAppointmentsByHospital(string hospitalName)
+        {
+            return _appointmentRepository.GetAppointmentsByHospital(hospitalName);
+        }
     }
 }

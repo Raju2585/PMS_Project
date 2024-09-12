@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "PMS.Api.Controllers.AppointmentController",
+    "Method": "RetrieveAppointmentsByHospital",
+    "RelativePath": "api/Appointment/hospital/{hospitalName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hospitalName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PMS.Api.Controllers.AppointmentController",
     "Method": "ModifyAppointment",
     "RelativePath": "api/Appointment/Modify/{id}",
     "HttpMethod": "PUT",

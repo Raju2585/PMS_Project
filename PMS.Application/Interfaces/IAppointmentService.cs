@@ -11,6 +11,7 @@ namespace PMS.Application.Interfaces
         Task<List<AppointmentDto>> GetAppointmentsByPatientId(int patientId);
         Task<List<AppointmentDto>> GetAppointmentsByDoctorId(int doctorId);
         Task<Appointment> UpdateAppointmentStatus(Appointment appointment);
+        Task<List<Appointment>> GetAppointmentsByHospital(string hospital);
 
     }
 }
