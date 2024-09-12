@@ -304,6 +304,9 @@
             "projectReferences": {
               "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
                 "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
+              },
+              "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
               }
             }
           }

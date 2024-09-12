@@ -1081,6 +1081,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
           "PMS.Application": "1.0.0",
+          "PMS.Domain": "1.0.0",
           "System.Linq": "4.3.0"
         },
         "runtime": {

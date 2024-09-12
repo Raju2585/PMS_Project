@@ -5158,6 +5158,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "PMS.Application >= 1.0.0",
+      "PMS.Domain >= 1.0.0",
       "System.Linq >= 4.3.0"
     ]
   },
@@ -5191,6 +5192,9 @@
           "projectReferences": {
             "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
               "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
+            },
+            "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+              "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
             }
           }
         }
@@ -5258,5 +5262,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

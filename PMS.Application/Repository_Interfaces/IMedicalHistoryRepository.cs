@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace PMS.Application.Repository_Interfaces
 {
-    public interface IVitalSignRepository
+    public interface IMedicalHistoryRepository
     {
-        Task<VitalSign> CreateVitalSign(VitalSign vitalSign);
-        Task<VitalSign> GetVitalSignByPatient(int patientid);
+        Task<MedicalHistory> AddMedicalHistory(MedicalHistory medicalHistory);
+        Task<List<MedicalHistory>> GetMedicalHistoryByPatient(int patientId);
+
     }
 }

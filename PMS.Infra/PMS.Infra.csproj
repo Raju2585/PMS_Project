@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PMS.Application\PMS.Application.csproj" />
+    <ProjectReference Include="..\PMS.Domain\PMS.Domain.csproj" />
   </ItemGroup>
 
 </Project>
