@@ -34,8 +34,8 @@ namespace PMS.Api.Controllers
             return Ok(patients);
         }
         [HttpPost]
-        [Route("RegisterPatient")]
-        public async Task<ActionResult<PatientRes>> RegisterPatient(PatientReq patientReq)
+        [Route("Register")]
+        public async Task<ActionResult<PatientRes>> Register(PatientReq patientReq)
         {
             var PatientRes = await _patientService.RegisterPatient(patientReq);
             if (PatientRes.IsSuccess)
@@ -51,7 +51,7 @@ namespace PMS.Api.Controllers
         [AllowAnonymous]
         [HttpPost]
         [Route("PatientLogin")]
-        public async Task<IActionResult> PatientLogin(PatientLogin patient)
+        public async Task<IActionResult> PatientLogin(LoginReq patient)
         {
             IActionResult response = Unauthorized();
             var token = await _patientService.Login(patient);

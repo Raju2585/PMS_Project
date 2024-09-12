@@ -22,9 +22,9 @@ namespace PMS.Domain.Entities
         public DateTime Date { get; set; }
 
         // Navigation properties
-        public virtual ICollection<Appointment> Appointments { get; set; } = new HashSet<Appointment>();
-        public virtual ICollection<Consultation> Consultations { get; set; } = new HashSet<Consultation>();
-        public virtual ICollection<MedicalHistory> MedicalHistories { get; set; } = new HashSet<MedicalHistory>();
+        public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+        public virtual ICollection<Consultation> Consultations { get; set; } = new List<Consultation>();
+        public virtual ICollection<MedicalHistory> MedicalHistories { get; set; } = new List<MedicalHistory>();
         public virtual Device Device { get; set; }  
     }
 

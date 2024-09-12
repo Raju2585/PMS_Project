@@ -7,12 +7,8 @@ using PMS.Application.Repository_Interfaces;
 using PMS.Domain.Entities;
 using PMS.Domain.Entities.Request;
 using PMS.Domain.Entities.Response;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace PMS.Application.Services
 {
@@ -70,28 +66,29 @@ namespace PMS.Application.Services
             }
             return new PatientRes { IsSuccess = false, ErrorMessage = "Patient not added" };
         }
-        private async Task<PatientLogin> AuthenticatePatient(PatientLogin patient)
+        private async Task<LoginRes> AuthenticatePatient(LoginReq patient)
         {
-            PatientLogin _patient = null;
-
+            //LoginReq _patient = null;
+            var patientLoginRes = new LoginRes();
             try
             {
                 var patientOb = await _repository.GetPatientByEmail(patient.Email);
-
+                var patientReq=_mapper.Map<PatientReq>(patientOb);
                 if (patientOb != null && (patient.Email == patientOb.PatientEmail && patient.Password == patientOb.Password))
                 {
-                    _patient = patient;
+                    patientLoginRes.Patient = patientReq;
+                    patientLoginRes.IsLogged=true;
                 }
             }
             catch (Exception ex)
             {
-                return _patient;
+                return patientLoginRes;
             }
 
-            return _patient;
+            return patientLoginRes;
 
         }
-        private async Task<string> GenerateToken(PatientLogin patient)
+        private async Task<string> GenerateToken(LoginReq patient)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
@@ -102,22 +99,22 @@ namespace PMS.Application.Services
                 );
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-        public async Task<string> Login(PatientLogin patient)
+        public async Task<LoginRes> Login(LoginReq patient)
         {
-            var token = "";
+            LoginRes _user = null;
             try
             {
-                var _user = await AuthenticatePatient(patient);
-                if (_user != null)
+                _user = await AuthenticatePatient(patient);
+                if (_user != null && _user.IsLogged)
                 {
-                    token = await GenerateToken(patient);
+                    _user.Token = await GenerateToken(patient);
                 }
             }
             catch (Exception e)
             {
-                return token;
+                return _user;
             }
-            return token;
+            return _user;
         }
     }
 }
