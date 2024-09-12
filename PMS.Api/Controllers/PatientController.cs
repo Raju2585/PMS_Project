@@ -51,7 +51,7 @@ namespace PMS.Api.Controllers
         [AllowAnonymous]
         [HttpPost]
         [Route("PatientLogin")]
-        public async Task<IActionResult> PatientLogin(PatientLogin patient)
+        public async Task<IActionResult> PatientLogin(LoginReq patient)
         {
             IActionResult response = Unauthorized();
             var token = await _patientService.Login(patient);

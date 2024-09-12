@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj": {}
+    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj": {
+    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj",
         "projectName": "PMS.Api",
-        "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj",
-        "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Api\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
-                "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
+              "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
               },
-              "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj": {
-                "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj"
+              "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj"
               }
             }
           }
@@ -63,7 +63,11 @@
             },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -103,17 +107,17 @@
         }
       }
     },
-    "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
+    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
         "projectName": "PMS.Application",
-        "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
-        "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,8 +132,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
+              "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
               }
             }
           }
@@ -149,6 +153,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -186,17 +198,17 @@
         }
       }
     },
-    "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
         "projectName": "PMS.Domain",
-        "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
-        "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -232,6 +244,14 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "System.Linq": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -257,17 +277,17 @@
         }
       }
     },
-    "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj": {
+    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
         "projectName": "PMS.Infra",
-        "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
-        "packagesPath": "C:\\Users\\PavaniMaddu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PavaniMaddu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -282,8 +302,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
-                "projectPath": "C:\\Users\\PavaniMaddu\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
+              "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
               }
             }
           }
@@ -303,6 +323,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
