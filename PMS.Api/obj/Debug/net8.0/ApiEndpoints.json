@@ -106,14 +106,26 @@
     "ReturnTypes": []
   },
   {
+<<<<<<< HEAD
+    "ContainingType": "PMS.Api.Controllers.HistoryController",
+    "Method": "AddMedicalHistory",
+    "RelativePath": "api/History",
+    "HttpMethod": "POST",
+=======
     "ContainingType": "PMS.Api.Controllers.AppointmentController",
     "Method": "UpdateStatus",
     "RelativePath": "api/Appointment/update-status/{appointmentId}",
     "HttpMethod": "PUT",
+>>>>>>> 5bcabd489a64c63b1afae32c055a7747e067c46f
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
+<<<<<<< HEAD
+        "Name": "medicalHistorydto",
+        "Type": "PMS.Domain.Entities.DTOs.MedicalHistoryDTOs",
+        "IsRequired": true
+=======
         "Name": "appointmentId",
         "Type": "System.Int32",
         "IsRequired": true
@@ -122,11 +134,41 @@
         "Name": "status",
         "Type": "System.Int32",
         "IsRequired": false
+>>>>>>> 5bcabd489a64c63b1afae32c055a7747e067c46f
       }
     ],
     "ReturnTypes": []
   },
   {
+<<<<<<< HEAD
+    "ContainingType": "PMS.Api.Controllers.HistoryController",
+    "Method": "GetMedicalHistoryByPatient",
+    "RelativePath": "api/History",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PMS.Domain.Entities.DTOs.MedicalHistoryDTOs, PMS.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+=======
+>>>>>>> 5bcabd489a64c63b1afae32c055a7747e067c46f
     "ContainingType": "PMS.Api.Controllers.PatientController",
     "Method": "GetPatients",
     "RelativePath": "api/Patient/GetAllPatients",
@@ -164,8 +206,8 @@
   },
   {
     "ContainingType": "PMS.Api.Controllers.PatientController",
-    "Method": "RegisterPatient",
-    "RelativePath": "api/Patient/RegisterPatient",
+    "Method": "Register",
+    "RelativePath": "api/Patient/Register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -179,6 +221,32 @@
     "ReturnTypes": [
       {
         "Type": "PMS.Domain.Entities.Response.PatientRes",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PMS.Api.Controllers.VitalSignController",
+    "Method": "GetVitalSignByPatient",
+    "RelativePath": "api/VitalSign",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PMS.Domain.Entities.VitalSign, PMS.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
