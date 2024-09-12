@@ -35,7 +35,6 @@ C:\Users\SanthirajuMerla\Source\Repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\PM
 C:\Users\SanthirajuMerla\Source\Repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\ref\PMS.Domain.dll
 C:\Users\SanthirajuMerla\source\repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\PMS.Domain.csproj.AssemblyReference.cache
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Domain\bin\Debug\net8.0\PMS.Domain.deps.json
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Domain\bin\Debug\net8.0\PMS.Domain.dll
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Domain\bin\Debug\net8.0\PMS.Domain.pdb
@@ -64,7 +63,6 @@ C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\refin
 C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\PMS.Domain.pdb
 C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\ref\PMS.Domain.dll
 >>>>>>> HospitalService
-=======
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Domain\bin\Debug\net8.0\PMS.Domain.deps.json
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Domain\bin\Debug\net8.0\PMS.Domain.dll
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Domain\bin\Debug\net8.0\PMS.Domain.pdb

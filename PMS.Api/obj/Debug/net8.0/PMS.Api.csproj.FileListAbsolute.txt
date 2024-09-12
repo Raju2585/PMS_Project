@@ -430,7 +430,6 @@ C:\Users\SanthirajuMerla\Source\Repos\PMS_Project\PMS.Api\obj\Debug\net8.0\ref\P
 C:\Users\SanthirajuMerla\source\repos\PMS_Project\PMS.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\SanthirajuMerla\source\repos\PMS_Project\PMS.Api\bin\Debug\net8.0\AutoMapper.dll
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Api\bin\Debug\net8.0\appsettings.json
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Api\bin\Debug\net8.0\PMS.Api.exe
@@ -724,7 +723,6 @@ C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Api\obj\Debug\net8.0\PMS.Api.
 C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Api\obj\Debug\net8.0\PMS.Api.genruntimeconfig.cache
 C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Api\obj\Debug\net8.0\ref\PMS.Api.dll
 >>>>>>> HospitalService
-=======
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Api\bin\Debug\net8.0\appsettings.json
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Api\bin\Debug\net8.0\PMS.Api.exe

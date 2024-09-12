@@ -46,7 +46,6 @@ C:\Users\SanthirajuMerla\Source\Repos\PMS_Project\PMS.Application\obj\Debug\net8
 C:\Users\SanthirajuMerla\Source\Repos\PMS_Project\PMS.Application\obj\Debug\net8.0\PMS.Application.pdb
 C:\Users\SanthirajuMerla\Source\Repos\PMS_Project\PMS.Application\obj\Debug\net8.0\ref\PMS.Application.dll
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Application\bin\Debug\net8.0\PMS.Application.deps.json
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Application\bin\Debug\net8.0\PMS.Application.dll
 C:\Users\SuchithraJalda\Source\Repos\PMS_Project\PMS.Application\bin\Debug\net8.0\PMS.Application.pdb
@@ -81,7 +80,6 @@ C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Application\obj\Debug\net8.0\
 C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Application\obj\Debug\net8.0\PMS.Application.pdb
 C:\Users\ShruthiBurka\source\repos\PMS_Project\PMS.Application\obj\Debug\net8.0\ref\PMS.Application.dll
 >>>>>>> HospitalService
-=======
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Application\bin\Debug\net8.0\PMS.Application.deps.json
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Application\bin\Debug\net8.0\PMS.Application.dll
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Application\bin\Debug\net8.0\PMS.Application.pdb
