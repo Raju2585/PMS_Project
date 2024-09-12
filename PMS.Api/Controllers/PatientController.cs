@@ -54,11 +54,10 @@ namespace PMS.Api.Controllers
         public async Task<IActionResult> PatientLogin(LoginReq patient)
         {
             IActionResult response = Unauthorized();
-            var token = await _patientService.Login(patient);
-            if (token != "")
+            var loginRes = await _patientService.Login(patient);
+            if (loginRes != null)
             {
-                response = Ok(new { token = token });
-                return response;
+                return Ok(loginRes);
             }
             return response;
         }
