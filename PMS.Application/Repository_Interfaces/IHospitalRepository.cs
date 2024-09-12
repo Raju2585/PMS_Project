@@ -5,15 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PMS.Application.Interfaces
+namespace PMS.Application.Repository_Interfaces
 {
-    public interface IHospitalService
+    public interface IHospitalRepository
     {
         Task<List<Hospital>> GetAllHospitals();
 
         Task<List<Hospital>> GetHospitalByLocation(string location);
 
         Task<List<Hospital>> GetHospitalByPinCode(int pinCode);
-
     }
 }
