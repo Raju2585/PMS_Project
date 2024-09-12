@@ -13,6 +13,6 @@ namespace PMS.Application.Interfaces
     {
         Task<List<PatientDtl>> GetAllPatientDtls();
         Task<PatientRes> RegisterPatient(PatientReq patientReq);
-        Task<string> Login(PatientLogin patient);
+        Task<LoginRes> Login(LoginReq patient);
     }
 }

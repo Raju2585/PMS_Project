@@ -50,9 +50,8 @@ namespace PMS.Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("StatusId")
+                        .HasColumnType("int");
 
                     b.HasKey("AppointmentId");
 
@@ -168,7 +167,6 @@ namespace PMS.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("HospitalImage")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("HospitalName")
