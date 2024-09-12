@@ -21,5 +21,5 @@ namespace PMS.Domain.Entities
         public ICollection<Consultation> Consultations { get; set; } = new List<Consultation>();
         public virtual Hospital Hospital { get; set; }
     }
-
+                                                                                                                                                                                      
 }

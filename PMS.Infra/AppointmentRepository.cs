@@ -34,7 +34,7 @@ namespace PMS.Infra
             existingAppointment.PatientId = updatedAppointment.PatientId;
             existingAppointment.DoctorId = updatedAppointment.DoctorId;
             existingAppointment.AppointmentDate = updatedAppointment.AppointmentDate;
-            existingAppointment.Status = updatedAppointment.Status;
+            existingAppointment.StatusId = updatedAppointment.StatusId;
             existingAppointment.Reason = updatedAppointment.Reason;
             existingAppointment.CreatedAt = updatedAppointment.CreatedAt;
 
@@ -59,5 +59,28 @@ namespace PMS.Infra
                 .Include(a => a.Patient)
                 .ToListAsync();
         }
+
+        public async Task<Appointment> UpdateAppointmentStatus(Appointment existingAppointment)
+        {
+            if (existingAppointment == null)
+                return null;
+
+            _applicationContext.Appointments.Update(existingAppointment);
+            await _applicationContext.SaveChangesAsync();
+
+            return existingAppointment;
+        }
+
+        public async Task<List<Appointment>> GetAppointmentsByHospital(string hospitalName)
+        {
+            if (string.IsNullOrWhiteSpace(hospitalName))
+                throw new ArgumentException("Hospital name cannot be null or empty", nameof(hospitalName));
+
+            return await _applicationContext.Appointments
+                .Where(a => a.HospitalName == hospitalName)
+                
+                .ToListAsync();
+        }
+
     }
 }
