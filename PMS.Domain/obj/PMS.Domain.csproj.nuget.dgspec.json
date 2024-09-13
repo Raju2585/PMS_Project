@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {}
+    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Domain\\PMS.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
+    "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Domain\\PMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Domain\\PMS.Domain.csproj",
         "projectName": "PMS.Domain",
-        "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Domain\\PMS.Domain.csproj",
         "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",

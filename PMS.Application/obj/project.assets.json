@@ -2189,11 +2189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
+      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Application\\PMS.Application.csproj",
       "projectName": "PMS.Application",
-      "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
+      "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Application\\PMS.Application.csproj",
       "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\obj\\",
+      "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2211,8 +2211,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj": {
-              "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj"
+            "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Domain\\PMS.Domain.csproj": {
+              "projectPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Domain\\PMS.Domain.csproj"
             }
           }
         }

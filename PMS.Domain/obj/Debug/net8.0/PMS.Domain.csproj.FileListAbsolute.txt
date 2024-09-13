@@ -77,3 +77,16 @@ C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\refint
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\PMS.Domain.pdb
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Domain\obj\Debug\net8.0\ref\PMS.Domain.dll
 >>>>>>> 5bcabd489a64c63b1afae32c055a7747e067c46f
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\bin\Debug\net8.0\PMS.Domain.deps.json
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\bin\Debug\net8.0\PMS.Domain.dll
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\bin\Debug\net8.0\PMS.Domain.pdb
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.csproj.AssemblyReference.cache
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.AssemblyInfoInputs.cache
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.AssemblyInfo.cs
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.sourcelink.json
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.dll
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\refint\PMS.Domain.dll
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\PMS.Domain.pdb
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Domain\obj\Debug\net8.0\ref\PMS.Domain.dll

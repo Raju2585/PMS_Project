@@ -869,3 +869,14 @@ C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Api\obj\Debug\net8.0\PMS.Api.p
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Api\obj\Debug\net8.0\PMS.Api.genruntimeconfig.cache
 C:\Users\PavaniMaddu\Source\Repos\PMS_Project\PMS.Api\obj\Debug\net8.0\ref\PMS.Api.dll
 >>>>>>> 5bcabd489a64c63b1afae32c055a7747e067c46f
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.csproj.AssemblyReference.cache
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.AssemblyInfoInputs.cache
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.AssemblyInfo.cs
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.csproj.CoreCompileInputs.cache
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.sourcelink.json
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.dll
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\refint\PMS.Api.dll
+C:\Users\SanthirajuMerla\Source\Repos\PMS_Prj\PMS.Api\obj\Debug\net8.0\PMS.Api.pdb

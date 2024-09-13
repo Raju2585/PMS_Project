@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p99PKMorhjM=",
+  "dgSpecHash": "wPBnpJj8ivk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
+  "projectFilePath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Prj\\PMS.Application\\PMS.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.1.1\\microsoft.aspnetcore.cors.2.1.1.nupkg.sha512",
